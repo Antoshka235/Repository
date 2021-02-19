@@ -1,0 +1,62 @@
+﻿<Page x:Class="Travel_Agency.FlightEdit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Travel_Agency"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FlightEdit">
+
+    <Grid Background="#1ba1a5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="140" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Заказать рейс:" FontSize="25" Grid.Column="2"></TextBlock>
+        <TextBlock Text="Тип транспорта:" Grid.Column="1" Grid.Row="1"></TextBlock>
+        <TextBlock Text="Пункт отправления:" Grid.Column="1" Grid.Row="2"></TextBlock>
+        <TextBlock Text="Пункт назначения:" Grid.Column="1" Grid.Row="3"></TextBlock>
+        <TextBlock Text="Дата отправления:" Grid.Column="1" Grid.Row="4"></TextBlock>
+        <TextBlock Text="Время в пути (ч):" Grid.Column="1" Grid.Row="5"></TextBlock>
+        <TextBlock Text="Количество мест:" Grid.Column="1" Grid.Row="6"></TextBlock>
+        <TextBlock Text="Цена:" Grid.Column="1" Grid.Row="7"></TextBlock>
+
+        <TextBox Text="{Binding Тип_транспорта}" Grid.Column="2" Grid.Row="1" Height="30" 
+                 Width="580" HorizontalAlignment="Left"></TextBox>
+
+        <TextBox Text="{Binding Пункт_отправления}" HorizontalAlignment="Left" 
+                 Grid.Column="2" Grid.Row="2" Height="30" Width="580"></TextBox>
+
+        <ComboBox Text="{Binding Пункт_назначения}" x:Name="ComboPlace" HorizontalAlignment="Left" 
+                 Grid.Column="2" Grid.Row="3" Height="30" Width="580" DisplayMemberPath="Название"></ComboBox>
+
+        <DatePicker SelectedDate="{Binding Дата_отправления}" Grid.Column="2" HorizontalAlignment="Left" 
+                 Grid.Row="4" Height="30" Width="580"></DatePicker>
+
+        <TextBox Text="{Binding Время_в_пути_в_часах}" HorizontalAlignment="Left" 
+                 Grid.Column="2" Grid.Row="5" Height="30" Width="580"></TextBox>
+
+        <TextBox Text="{Binding Количетво_мест}" HorizontalAlignment="Left" 
+                 Grid.Column="2" Grid.Row="6" Height="30" Width="580"></TextBox>
+
+        <TextBox Text="{Binding Цена}" HorizontalAlignment="Left" 
+                 Grid.Column="2" Grid.Row="7" Height="30" Width="580"></TextBox>
+
+        <Button Content="Сохранить" Name="BtnSave10" Click="BtnSave10_Click" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="8" Grid.Column="2"/>
+    </Grid>
+</Page>

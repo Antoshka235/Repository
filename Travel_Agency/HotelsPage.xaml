@@ -1,0 +1,51 @@
+﻿<Page x:Class="Travel_Agency.HotelsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Travel_Agency"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HotelsPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Background="LightBlue" Grid.Row="2" Grid.Column="1"></Grid>
+        <TextBlock Text="Отели!" Grid.Column="1" FontSize="25"></TextBlock>
+        <DataGrid x:Name="DGridHotel" Background="#1ba1a5" AutoGenerateColumns="False" Grid.Column="1" Grid.Row="1" IsReadOnly="True" FontWeight="Bold">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Изображение" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image HorizontalAlignment="Center" Stretch="UniformToFill"  Source="{Binding Изображение}"></Image>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Название" Binding="{Binding Название}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество звезд" Binding="{Binding Количество_звезд}" Width="*"></DataGridTextColumn>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="BtnEdit7" Click="BtnEdit7_Click"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Добавить" Name="BtnAdd7" Click="BtnAdd7_Click" 
+                Width="300" Height="45" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"></Button>
+        
+        <Button Content="Удалить" Name="BtnDelete7" Click="BtnDelete7_Click" 
+                Width="300" Height="45" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Center" Grid.Column="1"></Button>
+    </Grid>
+</Page>

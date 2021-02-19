@@ -1,0 +1,43 @@
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\bin\Debug\Travel Agency.exe.config
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\bin\Debug\Travel Agency.exe
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\bin\Debug\Travel Agency.pdb
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\TourEdit.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\TourPage.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\App.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency_Content.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency_MarkupCompile.cache
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency_MarkupCompile.lref
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\App.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\TourEdit.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\TourPage.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency.g.resources
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel_Agency.Properties.Resources.resources
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency.csproj.CopyComplete
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency.exe
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\Travel Agency.pdb
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\WindowClient.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\WindowClient.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\GlavPage.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\GlavPage.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\EditHotels.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\HotelsPage.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\EditHotels.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\HotelsPage.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\CommentEdit.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\CommentPage.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\CommentEdit.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\CommentPage.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\FlightEdit.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\FlightPage.g.cs
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\FlightEdit.baml
+C:\Users\User\Desktop\Антон\Курсовое приложение\Travel Agency\Travel Agency\obj\Debug\FlightPage.baml

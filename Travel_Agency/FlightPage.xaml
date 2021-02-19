@@ -1,0 +1,56 @@
+﻿<Page x:Class="Travel_Agency.FlightPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Travel_Agency"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FlightPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Background="LightBlue" Grid.Row="2" Grid.Column="1"></Grid>
+        <TextBlock Text="Рейсы:" Grid.Column="1" FontSize="25"></TextBlock>
+        <DataGrid x:Name="DGridFlight" Background="#1ba1a5" AutoGenerateColumns="False" Grid.Column="1" Grid.Row="1" IsReadOnly="True" FontWeight="Bold">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Тип транспорта" Binding="{Binding Тип_транспорта}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Пункт отправления" Binding="{Binding Пункт_отправления}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Пункт назначения" Binding="{Binding Пункт_назначения}" Width="*"></DataGridTextColumn>
+
+                <DataGridTemplateColumn Header="Дата отправления" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding Дата_отправления}" IsEnabled="False"></DatePicker>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Время в пути (ч)" Binding="{Binding Время_в_пути_в_часах}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество мест" Binding="{Binding Количетво_мест}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Цена}" Width="*"></DataGridTextColumn>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="BtnEdit10" Click="BtnEdit10_Click"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Добавить" Name="BtnAdd10" Click="BtnAdd10_Click" Width="300" Height="45" 
+                HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"></Button>
+
+        <Button Content="Удалить" Name="BtnDelete10" Click="BtnDelete10_Click" Width="300" Height="45" 
+                HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Center" Grid.Column="1"></Button>
+    </Grid>
+</Page>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75E17AA0-BF7C-48BE-AA5E-2D47EA9F225A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Travel_Agency</RootNamespace>
+    <AssemblyName>Travel Agency</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CommentEdit.xaml.cs">
+      <DependentUpon>CommentEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommentPage.xaml.cs">
+      <DependentUpon>CommentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditHotels.xaml.cs">
+      <DependentUpon>EditHotels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlightEdit.xaml.cs">
+      <DependentUpon>FlightEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlightPage.xaml.cs">
+      <DependentUpon>FlightPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlavPage.xaml.cs">
+      <DependentUpon>GlavPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HotelsPage.xaml.cs">
+      <DependentUpon>HotelsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="ModelBaseTravelAgency.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBaseTravelAgency.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBaseTravelAgency.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBaseTravelAgency.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBaseTravelAgency.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TourEdit.xaml.cs">
+      <DependentUpon>TourEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TourPage.xaml.cs">
+      <DependentUpon>TourPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowClient.xaml.cs">
+      <DependentUpon>WindowClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Коментарий_о_отеле.cs">
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Отель.cs">
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Пользователи.cs">
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Рейсы.cs">
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Страна.cs">
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Тип.cs">
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Тур.cs">
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Фото_отелей.cs">
+      <DependentUpon>ModelBaseTravelAgency.tt</DependentUpon>
+    </Compile>
+    <Page Include="CommentEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditHotels.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlightEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlightPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GlavPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HotelsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="TourEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TourPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="ModelBaseTravelAgency.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelBaseTravelAgency.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelBaseTravelAgency.edmx.diagram">
+      <DependentUpon>ModelBaseTravelAgency.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Отели\1.jpg" />
+    <Resource Include="Отели\2.jpg" />
+    <Resource Include="Resources\Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Отели\3.jpg" />
+    <Resource Include="Resources\Значок.png" />
+    <Resource Include="Resources\Fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Win.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelBaseTravelAgency.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelBaseTravelAgency.edmx</DependentUpon>
+      <LastGenOutput>ModelBaseTravelAgency.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelBaseTravelAgency.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelBaseTravelAgency.edmx</DependentUpon>
+      <LastGenOutput>ModelBaseTravelAgency.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

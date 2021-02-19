@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище TravelAgency1ModelContainer" CdmEntityContainer="TravelAgency1Entities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TravelAgency1Model.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Коментарий_о_отеле">
+      <EntityTypeMapping TypeName="TravelAgency1Model.Коментарий_о_отеле">
+        <MappingFragment StoreEntitySet="Коментарий о отеле">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ОтельID" ColumnName="ОтельID" />
+          <ScalarProperty Name="Текст" ColumnName="Текст" />
+          <ScalarProperty Name="Дата_создания" ColumnName="Дата_создания" />
+          <ScalarProperty Name="Отель" ColumnName="Отель" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Отель">
+      <EntityTypeMapping TypeName="TravelAgency1Model.Отель">
+        <MappingFragment StoreEntitySet="Отель">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Количество_звезд" ColumnName="Количество_звезд" />
+          <ScalarProperty Name="Код_страны" ColumnName="Код_страны" />
+          <ScalarProperty Name="Изображение" ColumnName="Изображение" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Пользователи">
+      <EntityTypeMapping TypeName="TravelAgency1Model.Пользователи">
+        <MappingFragment StoreEntitySet="Пользователи">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Рейсы">
+      <EntityTypeMapping TypeName="TravelAgency1Model.Рейсы">
+        <MappingFragment StoreEntitySet="Рейсы">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Тип_транспорта" ColumnName="Тип_транспорта" />
+          <ScalarProperty Name="Пункт_отправления" ColumnName="Пункт_отправления" />
+          <ScalarProperty Name="Пункт_назначения" ColumnName="Пункт_назначения" />
+          <ScalarProperty Name="Дата_отправления" ColumnName="Дата_отправления" />
+          <ScalarProperty Name="Время_в_пути_в_часах" ColumnName="Время_в_пути_в_часах" />
+          <ScalarProperty Name="Количетво_мест" ColumnName="Количетво_мест" />
+          <ScalarProperty Name="Цена" ColumnName="Цена" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Страна">
+      <EntityTypeMapping TypeName="TravelAgency1Model.Страна">
+        <MappingFragment StoreEntitySet="Страна">
+          <ScalarProperty Name="Код" ColumnName="Код" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Тип">
+      <EntityTypeMapping TypeName="TravelAgency1Model.Тип">
+        <MappingFragment StoreEntitySet="Тип">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Описание" ColumnName="Описание" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Тур">
+      <EntityTypeMapping TypeName="TravelAgency1Model.Тур">
+        <MappingFragment StoreEntitySet="Тур">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Количество_билетов" ColumnName="Количество_билетов" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Описание" ColumnName="Описание" />
+          <ScalarProperty Name="Стоимость" ColumnName="Стоимость" />
+          <ScalarProperty Name="Актуальность" ColumnName="Актуальность" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="РейсID" ColumnName="РейсID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Фото_отелей">
+      <EntityTypeMapping TypeName="TravelAgency1Model.Фото_отелей">
+        <MappingFragment StoreEntitySet="Фото_отелей">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ОтельID" ColumnName="ОтельID" />
+          <ScalarProperty Name="Название_отеля" ColumnName="Название_отеля" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Тип_и_тур" TypeName="TravelAgency1Model.Тип_и_тур" StoreEntitySet="Тип и тур">
+      <EndProperty Name="Тип">
+        <ScalarProperty Name="ID" ColumnName="ТипID" />
+      </EndProperty>
+      <EndProperty Name="Тур">
+        <ScalarProperty Name="ID" ColumnName="ТурID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Тур_и_отель" TypeName="TravelAgency1Model.Тур_и_отель" StoreEntitySet="Тур и отель">
+      <EndProperty Name="Отель">
+        <ScalarProperty Name="ID" ColumnName="ОтельID" />
+      </EndProperty>
+      <EndProperty Name="Тур">
+        <ScalarProperty Name="ID" ColumnName="ТурID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
